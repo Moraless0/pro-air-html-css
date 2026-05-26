@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO AIR - Check-In</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <main class="form-container">
+        <div class="form-wrapper">
+            <header class="form-header">
+                <img src="img/logo.png" alt="Logo PRO AIR" class="logo">
+                <h1>Check-In</h1>
+            </header>
+
+            <form class="checkin-form" action="menu.html" method="get">
+                <div class="form-group">
+                    <label for="numero-vuelo">Número de vuelo o reserva</label>
+                    <input 
+                        type="text" 
+                        id="numero-vuelo" 
+                        name="numero-vuelo" 
+                        placeholder="Ingresa el número de vuelo o reserva"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+
+            <div class="form-links">
+                <a href="menu.html" class="link">Volver al menú principal</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
