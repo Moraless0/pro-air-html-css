@@ -1,0 +1,208 @@
+/* ===================================
+   Responsive - PRO AIR
+   =================================== */
+
+/* Mobile (320px - 767px) */
+@media screen and (max-width: 767px) {
+    /* Ajustes generales */
+    html {
+        font-size: 14px;
+    }
+    
+    /* Formularios */
+    .form-wrapper,
+    .login-wrapper {
+        padding: var(--spacing-lg);
+        max-width: 100%;
+    }
+    
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* Menú */
+    .menu-header {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+    
+    .menu-cards {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .menu-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .card-icon {
+        font-size: 2.5rem;
+    }
+    
+    /* Vuelos */
+    .flights-wrapper,
+    .my-flights-wrapper {
+        padding: var(--spacing-lg);
+    }
+    
+    .flights-table {
+        font-size: var(--font-size-small);
+    }
+    
+    .flights-table th,
+    .flights-table td {
+        padding: var(--spacing-sm);
+    }
+    
+    /* Mis Vuelos */
+    .flight-item {
+        padding: var(--spacing-md);
+    }
+    
+    .flight-info h2 {
+        font-size: var(--font-size-large);
+    }
+    
+    /* Botones */
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Formularios */
+    .form-wrapper,
+    .login-wrapper {
+        max-width: 500px;
+    }
+    
+    /* Menú */
+    .menu-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Vuelos */
+    .flights-wrapper,
+    .my-flights-wrapper {
+        max-width: 900px;
+    }
+}
+
+/* Desktop (1024px+) */
+@media screen and (min-width: 1024px) {
+    /* Vista centrada en desktop con padding lateral */
+    body {
+        background-color: var(--color-gray-light);
+    }
+    
+    /* Formularios centrados */
+    .form-container,
+    .login-container {
+        padding: var(--spacing-xl);
+    }
+    
+    .form-wrapper,
+    .login-wrapper {
+        max-width: 450px;
+    }
+    
+    /* Menú */
+    .menu-container {
+        padding: var(--spacing-xl);
+    }
+    
+    .menu-content {
+        max-width: 1200px;
+    }
+    
+    .menu-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xl);
+    }
+    
+    .menu-card {
+        padding: var(--spacing-xl);
+    }
+    
+    .card-icon {
+        font-size: 3.5rem;
+    }
+    
+    /* Vuelos */
+    .flights-container,
+    .my-flights-container {
+        padding: var(--spacing-xl);
+    }
+    
+    .flights-wrapper,
+    .my-flights-wrapper {
+        max-width: 1200px;
+        padding: var(--spacing-xl);
+    }
+    
+    .flights-table {
+        font-size: var(--font-size-base);
+    }
+    
+    /* Mis Vuelos */
+    .flights-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--spacing-lg);
+    }
+    
+    .flight-item {
+        margin-bottom: 0;
+    }
+}
+
+/* Extra Large Desktop (1440px+) */
+@media screen and (min-width: 1440px) {
+    .menu-content,
+    .flights-wrapper,
+    .my-flights-wrapper {
+        max-width: 1400px;
+    }
+    
+    .menu-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xl);
+    }
+}
+
+/* Orientación landscape en móvil */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .form-wrapper,
+    .login-wrapper {
+        padding: var(--spacing-md);
+    }
+    
+    .menu-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (< 360px) */
+@media screen and (max-width: 359px) {
+    html {
+        font-size: 12px;
+    }
+    
+    .form-wrapper,
+    .login-wrapper {
+        padding: var(--spacing-md);
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: var(--font-size-small);
+    }
+}
