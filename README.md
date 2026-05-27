@@ -15,7 +15,6 @@ Bienvenido a PRO AIR, un sistema web moderno y futurista para la reserva de vuel
 
 - **HTML5**: Estructura semántica
 - **CSS3**: Estilos con variables CSS, flexbox, grid y animaciones
-- **JavaScript**: Interactividad básica (loading screens)
 - **Git**: Control de versiones
 
 ## 📦 Instalación
