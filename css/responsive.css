@@ -4,6 +4,15 @@
 
 /* Mobile (320px - 767px) */
 @media screen and (max-width: 767px) {
+    /* Nav bars */
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
     /* Ajustes generales */
     html {
         font-size: 14px;
@@ -46,11 +55,17 @@
     .my-flights-wrapper {
         padding: var(--spacing-lg);
     }
-    
+
+    .flights-content {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
     .flights-table {
         font-size: var(--font-size-small);
+        min-width: 600px;
     }
-    
+
     .flights-table th,
     .flights-table td {
         padding: var(--spacing-sm);
@@ -73,6 +88,15 @@
 
 /* Tablet (768px - 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Nav bars */
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
     /* Formularios */
     .form-wrapper,
     .login-wrapper {
@@ -93,9 +117,18 @@
 
 /* Desktop (1024px+) */
 @media screen and (min-width: 1024px) {
+    /* Nav bars */
+    .nav-bar {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
     /* Vista centrada en desktop con padding lateral */
     body {
-        background-color: var(--color-gray-light);
+        background-color: var(--color-background);
     }
     
     /* Formularios centrados */
@@ -113,49 +146,60 @@
     .menu-container {
         padding: var(--spacing-xl);
     }
-    
+
     .menu-content {
-        max-width: 1200px;
+        max-width: 1400px;
     }
-    
+
     .menu-cards {
         grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-xl);
     }
-    
+
     .menu-card {
         padding: var(--spacing-xl);
     }
-    
+
     .card-icon {
         font-size: 3.5rem;
     }
-    
+
     /* Vuelos */
     .flights-container,
-    .my-flights-container {
+    .my-flights-container,
+    .payment-container {
         padding: var(--spacing-xl);
     }
-    
+
     .flights-wrapper,
-    .my-flights-wrapper {
-        max-width: 1200px;
+    .my-flights-wrapper,
+    .payment-wrapper {
+        max-width: 1400px;
         padding: var(--spacing-xl);
     }
-    
+
     .flights-table {
         font-size: var(--font-size-base);
     }
-    
+
     /* Mis Vuelos */
     .flights-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: var(--spacing-lg);
     }
-    
+
     .flight-item {
         margin-bottom: 0;
+    }
+
+    /* Pago */
+    .payment-wrapper {
+        max-width: 900px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -163,10 +207,15 @@
 @media screen and (min-width: 1440px) {
     .menu-content,
     .flights-wrapper,
-    .my-flights-wrapper {
+    .my-flights-wrapper,
+    .payment-wrapper {
         max-width: 1400px;
     }
-    
+
+    .payment-wrapper {
+        max-width: 1000px;
+    }
+
     .menu-cards {
         grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-xl);

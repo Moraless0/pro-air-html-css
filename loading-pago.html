@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO AIR - Procesando Pago</title>
+    <meta http-equiv="refresh" content="3;url=menu.html">
+    <link rel="icon" href="./img/icons/icono.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .loading-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
+            padding: var(--spacing-md);
+        }
+
+        .loading-text {
+            color: var(--color-text-primary);
+            font-size: var(--font-size-large);
+            font-weight: 600;
+            text-align: center;
+            animation: fadeInOut 2s ease-in-out infinite;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .loading-subtext {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-small);
+            margin-top: var(--spacing-sm);
+            text-align: center;
+        }
+
+        .progress-container {
+            width: 300px;
+            max-width: 90%;
+            margin: var(--spacing-lg) 0;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: var(--color-gray-dark);
+            border-radius: var(--border-radius-md);
+            overflow: hidden;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+            border-radius: var(--border-radius-md);
+            animation: progress 3s ease-in-out forwards;
+            box-shadow: var(--glow-secondary);
+        }
+
+        .payment-icon {
+            font-size: 4rem;
+            animation: pulse 2s ease-in-out infinite;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .check-icon {
+            font-size: 4rem;
+            animation: checkmark 1s ease-in-out infinite;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes progress {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        @keyframes checkmark {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .success-message {
+            color: var(--color-secondary);
+            font-size: var(--font-size-large);
+            font-weight: 600;
+            text-align: center;
+            animation: fadeInOut 2s ease-in-out infinite;
+            text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="payment-icon">💳</div>
+        <h1 class="loading-text">Procesando Pago</h1>
+        <p class="loading-subtext">Procesando tu reserva de forma segura...</p>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        <div class="check-icon">✅</div>
+        <p class="success-message">¡Pago completado!</p>
+    </div>
+</body>
+</html>

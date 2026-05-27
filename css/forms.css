@@ -15,12 +15,13 @@
 
 .form-wrapper,
 .login-wrapper {
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
     padding: var(--spacing-xl);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-lg);
     width: 100%;
     max-width: 400px;
+    border: 1px solid rgba(6, 182, 212, 0.3);
 }
 
 /* Encabezado de formularios */
@@ -52,7 +53,7 @@
     display: block;
     margin-bottom: var(--spacing-xs);
     font-weight: 500;
-    color: var(--color-gray-dark);
+    color: var(--color-text-primary);
 }
 
 .form-group input[type="text"],
@@ -62,21 +63,23 @@
 .form-group input[type="date"] {
     width: 100%;
     padding: var(--spacing-sm);
-    border: 1px solid var(--color-gray-medium);
+    border: 1px solid var(--color-gray-light);
     border-radius: var(--border-radius-sm);
     font-family: var(--font-family);
     font-size: var(--font-size-base);
     transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    background-color: var(--color-gray-dark);
+    color: var(--color-text-primary);
 }
 
 .form-group input:focus {
     outline: none;
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(209, 60, 255, 0.1);
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.3);
 }
 
 .form-group input::placeholder {
-    color: var(--color-gray-dark);
+    color: var(--color-text-secondary);
     opacity: 0.6;
 }
 
@@ -113,39 +116,49 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: var(--color-white);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-md), var(--glow-primary);
     width: 100%;
 }
 
 .btn-primary:hover {
     transform: scale(1.02);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg), var(--glow-hover);
 }
 
 .btn-secondary {
-    background-color: var(--color-gray-medium);
-    color: var(--color-black);
+    background-color: var(--color-gray-light);
+    color: var(--color-text-primary);
     box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-secondary);
 }
 
 .btn-secondary:hover {
-    background-color: var(--color-gray-dark);
+    background-color: var(--color-secondary);
     color: var(--color-white);
     transform: scale(1.02);
+    box-shadow: var(--glow-secondary);
 }
 
 .btn-logout {
-    background-color: var(--color-gray-medium);
-    color: var(--color-black);
+    background-color: var(--color-gray-light);
+    color: var(--color-text-primary);
     padding: var(--spacing-xs) var(--spacing-md);
     font-size: var(--font-size-small);
+    border: 1px solid var(--color-primary);
 }
 
 .btn-logout:hover {
-    background-color: var(--color-gray-dark);
+    background-color: var(--color-primary);
     color: var(--color-white);
+    box-shadow: var(--glow-primary);
+}
+
+.btn-sm {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-small);
+    width: auto;
 }
 
 /* Enlaces de formulario */
@@ -166,6 +179,7 @@
 .link:hover {
     color: var(--color-secondary);
     text-decoration: underline;
+    text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
 }
 
 /* Formularios específicos */

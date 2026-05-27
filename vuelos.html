@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRO AIR - Vuelos Disponibles</title>
+    <link rel="icon" href="./img/icons/icono.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <nav class="nav-mobile">
+        <div class="nav-mobile-content">
+            <a href="menu.html" class="nav-mobile-logo">
+                <img src="./img/icons/logo.png" alt="Logo PRO AIR">
+                <span>PRO AIR</span>
+            </a>
+            <div class="nav-mobile-links">
+                <a href="menu.html" class="nav-mobile-link">Inicio</a>
+                <a href="index.html" class="nav-mobile-logout">Cerrar sesión</a>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="menu.html" class="nav-logo">
+                <img src="./img/icons/logo.png" alt="Logo PRO AIR">
+                <span>PRO AIR</span>
+            </a>
+            <div class="nav-links">
+                <a href="menu.html" class="nav-link">Inicio</a>
+                <a href="buscar-vuelos.html" class="nav-link">Buscar Vuelos</a>
+                <a href="mis-vuelos.html" class="nav-link">Mis Vuelos</a>
+                <a href="checkin.html" class="nav-link">Check-in</a>
+            </div>
+            <div class="nav-user">
+                <span class="nav-username">Usuario</span>
+                <a href="index.html" class="btn btn-logout">Cerrar sesión</a>
+            </div>
+        </div>
+    </nav>
     <main class="flights-container">
         <div class="flights-wrapper">
             <header class="flights-header">
-                <img src="img/logo.png" alt="Logo PRO AIR" class="logo">
+                <img src="./img/icons/logo.png" alt="Logo PRO AIR" class="logo">
                 <h1>Vuelos Disponibles</h1>
             </header>
 
@@ -25,6 +56,7 @@
                             <th scope="col">Fecha</th>
                             <th scope="col">Hora</th>
                             <th scope="col">Precio</th>
+                            <th scope="col">Acción</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -33,24 +65,28 @@
                             <td>2024-06-15</td>
                             <td>08:00</td>
                             <td>$250.000</td>
+                            <td><a href="pago.html" class="btn btn-primary btn-sm">Seleccionar</a></td>
                         </tr>
                         <tr>
                             <td>Bogotá - Cali</td>
                             <td>2024-06-15</td>
                             <td>10:30</td>
                             <td>$180.000</td>
+                            <td><a href="pago.html" class="btn btn-primary btn-sm">Seleccionar</a></td>
                         </tr>
                         <tr>
                             <td>Medellín - Cartagena</td>
                             <td>2024-06-16</td>
                             <td>14:00</td>
                             <td>$320.000</td>
+                            <td><a href="pago.html" class="btn btn-primary btn-sm">Seleccionar</a></td>
                         </tr>
                         <tr>
                             <td>Cali - Barranquilla</td>
                             <td>2024-06-16</td>
                             <td>16:45</td>
                             <td>$280.000</td>
+                            <td><a href="pago.html" class="btn btn-primary btn-sm">Seleccionar</a></td>
                         </tr>
                     </tbody>
                 </table>
