@@ -1,8 +1,6 @@
-/* ===================================
-   Layout - PRO AIR
-   =================================== */
+/* Layout */
 
-/* Nav Bar Desktop */
+/* Navegación desktop */
 .nav-bar {
     display: none;
     background-color: var(--color-surface);
@@ -14,7 +12,7 @@
     box-shadow: var(--shadow-md);
 }
 
-/* Nav Bar Móvil */
+/* Navegación móvil */
 .nav-mobile {
     display: block;
     background-color: var(--color-surface);
@@ -142,7 +140,7 @@
     font-weight: 500;
 }
 
-/* Menú Principal */
+/* Menú */
 .menu-container {
     min-height: 100vh;
     background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
@@ -215,7 +213,7 @@
     margin: 0;
 }
 
-/* Vuelos Disponibles */
+/* Vuelos */
 .flights-container {
     min-height: 100vh;
     background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
@@ -274,7 +272,7 @@
     text-align: center;
 }
 
-/* Mis Vuelos */
+/* Mis vuelos */
 .my-flights-container {
     min-height: 100vh;
     background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
@@ -339,7 +337,7 @@
     text-align: center;
 }
 
-/* Pago */
+/* Sección pago */
 .payment-container {
     min-height: 100vh;
     background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));

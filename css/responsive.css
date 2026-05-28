@@ -1,10 +1,8 @@
-/* ===================================
-   Responsive - PRO AIR
-   =================================== */
+/* Responsive */
 
-/* Mobile (320px - 767px) */
+/* Móvil */
 @media screen and (max-width: 767px) {
-    /* Nav bars */
+    /* Navegación */
     .nav-bar {
         display: none;
     }
@@ -13,7 +11,7 @@
         display: block;
     }
 
-    /* Ajustes generales */
+    /* General */
     html {
         font-size: 14px;
     }
@@ -71,7 +69,7 @@
         padding: var(--spacing-sm);
     }
     
-    /* Mis Vuelos */
+    /* Mis vuelos */
     .flight-item {
         padding: var(--spacing-md);
     }
@@ -86,9 +84,9 @@
     }
 }
 
-/* Tablet (768px - 1023px) */
+/* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Nav bars */
+    /* Navegación */
     .nav-bar {
         display: none;
     }
@@ -115,9 +113,9 @@
     }
 }
 
-/* Desktop (1024px+) */
+/* Desktop */
 @media screen and (min-width: 1024px) {
-    /* Nav bars */
+    /* Navegación */
     .nav-bar {
         display: block;
     }
@@ -126,12 +124,11 @@
         display: none;
     }
 
-    /* Vista centrada en desktop con padding lateral */
     body {
         background-color: var(--color-background);
     }
     
-    /* Formularios centrados */
+    /* Formularios */
     .form-container,
     .login-container {
         padding: var(--spacing-xl);
@@ -182,7 +179,7 @@
         font-size: var(--font-size-base);
     }
 
-    /* Mis Vuelos */
+    /* Mis vuelos */
     .flights-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -203,7 +200,7 @@
     }
 }
 
-/* Extra Large Desktop (1440px+) */
+/* Pantallas grandes */
 @media screen and (min-width: 1440px) {
     .menu-content,
     .flights-wrapper,
@@ -222,7 +219,7 @@
     }
 }
 
-/* Orientación landscape en móvil */
+/* Landscape móvil */
 @media screen and (max-width: 767px) and (orientation: landscape) {
     .form-wrapper,
     .login-wrapper {
@@ -234,7 +231,7 @@
     }
 }
 
-/* Ajustes para pantallas muy pequeñas (< 360px) */
+/* Pantallas pequeñas */
 @media screen and (max-width: 359px) {
     html {
         font-size: 12px;

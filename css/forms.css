@@ -1,8 +1,6 @@
-/* ===================================
-   Formularios - PRO AIR
-   =================================== */
+/* Formularios */
 
-/* Contenedor de formularios */
+/* Contenedores */
 .form-container,
 .login-container {
     display: flex;
@@ -24,7 +22,7 @@
     border: 1px solid rgba(6, 182, 212, 0.3);
 }
 
-/* Encabezado de formularios */
+/* Header */
 .form-header,
 .login-header {
     text-align: center;
@@ -44,7 +42,7 @@
     object-fit: contain;
 }
 
-/* Grupos de formulario */
+/* Inputs */
 .form-group {
     margin-bottom: var(--spacing-md);
 }
@@ -161,7 +159,7 @@
     width: auto;
 }
 
-/* Enlaces de formulario */
+/* Links */
 .login-links,
 .form-links {
     text-align: center;
@@ -182,7 +180,7 @@
     text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
 }
 
-/* Formularios específicos */
+/* Formularios */
 .login-form,
 .registration-form,
 .password-form,
