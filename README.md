@@ -15,7 +15,6 @@ Bienvenido a PRO AIR, un sistema web moderno y futurista para la reserva de vuel
 
 - **HTML5**: Estructura semántica
 - **CSS3**: Estilos con variables CSS, flexbox, grid y animaciones
-- **Git**: Control de versiones
 
 ## 📦 Instalación
 
@@ -93,17 +92,6 @@ Edita las variables CSS en `css/style.css`:
 }
 ```
 
-### Cambiar fuente
-
-Reemplaza la fuente Michroma en `css/style.css`:
-
-```css
-@font-face {
-    font-family: 'TuFuente';
-    src: url('../fonts/tu-fuente.woff2') format('woff2');
-}
-```
-
 ## 🚀 Flujo de Usuario
 
 1. **Login**: Ingresa con tu correo y contraseña
@@ -114,23 +102,35 @@ Reemplaza la fuente Michroma en `css/style.css`:
 6. **Check-in**: Realiza el check-in online
 7. **Mis Vuelos**: Consulta tus reservas activas
 
-## 🤝 Contribución
+## 📸 Capturas del Proyecto
 
-Las contribuciones son bienvenidas. Si quieres mejorar el proyecto:
+### Vista Escritorio
 
-1. Crea una rama feature: `git checkout -b feature/tu-feature`
-2. Haz tus cambios y commitea: `git commit -m "✨ feat: tu descripción"`
-3. Push a la rama: `git push origin feature/tu-feature`
-4. Abre un Pull Request
+![Login](img/esc1.png)
+![Menú Principal](img/esc2.png)
+![Búsqueda de Vuelos](img/esc3.png)
+![Vuelos Disponibles](img/esc4.png)
+![Check-in](img/esc5.png)
+![Mis Vuelos](img/esc6.png)
+![Pago](img/esc7.png)
+
+### Vista Móvil
+
+![Login Móvil](img/mov1.png)
+![Menú Móvil](img/mov2.png)
+![Búsqueda Móvil](img/mov3.png)
+![Vuelos Móvil](img/mov4.png)
+![Check-in Móvil](img/mov5.png)
+![Mis Vuelos Móvil](img/mov6.png)
 
 ## 📝 Licencia
 
-Este proyecto es educativo y de demostración.
+Este proyecto es educativo.
 
 ## 👨‍💻 Autor
 
-Desarrollado con ❤️ para aprender desarrollo web moderno.
+Henry Abdiel Morales Galindo.
 
 ---
 
-**¡Gracias por revisar PRO AIR!** Si tienes preguntas o sugerencias, no dudes en contactar.
+**¡Gracias por revisar PRO AIR!**
