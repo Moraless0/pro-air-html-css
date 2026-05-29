@@ -50,8 +50,35 @@
     
     /* Vuelos */
     .flights-wrapper,
-    .my-flights-wrapper {
+    .my-flights-wrapper,
+    .routes-wrapper {
         padding: var(--spacing-lg);
+    }
+
+    /* Rutas */
+    .routes-container {
+        padding: var(--spacing-sm);
+    }
+
+    .routes-map {
+        aspect-ratio: 4 / 5;
+        min-height: 520px;
+    }
+
+    .route-marker {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .marker-tooltip {
+        min-width: 132px;
+        font-size: 0.72rem;
+    }
+
+    .route-line {
+        left: 40%;
+        top: 54%;
+        width: 38%;
     }
 
     .flights-content {
@@ -108,8 +135,14 @@
     
     /* Vuelos */
     .flights-wrapper,
-    .my-flights-wrapper {
+    .my-flights-wrapper,
+    .routes-wrapper {
         max-width: 900px;
+    }
+
+    /* Rutas */
+    .routes-map {
+        aspect-ratio: 4 / 3;
     }
 }
 
@@ -164,13 +197,15 @@
     /* Vuelos */
     .flights-container,
     .my-flights-container,
-    .payment-container {
+    .payment-container,
+    .routes-container {
         padding: var(--spacing-xl);
     }
 
     .flights-wrapper,
     .my-flights-wrapper,
-    .payment-wrapper {
+    .payment-wrapper,
+    .routes-wrapper {
         max-width: 1400px;
         padding: var(--spacing-xl);
     }
@@ -205,6 +240,7 @@
     .menu-content,
     .flights-wrapper,
     .my-flights-wrapper,
+    .routes-wrapper,
     .payment-wrapper {
         max-width: 1400px;
     }

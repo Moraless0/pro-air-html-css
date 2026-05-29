@@ -474,3 +474,299 @@
 .payment-actions .btn {
     flex: 1;
 }
+
+/* Rutas */
+.routes-container {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, rgba(6, 182, 212, 0.18), transparent 32%),
+        linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
+    padding: var(--spacing-md);
+}
+
+.routes-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--spacing-xl);
+    background-color: rgba(30, 41, 59, 0.88);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg), var(--glow-primary);
+}
+
+.routes-header {
+    max-width: 760px;
+    margin: 0 auto var(--spacing-xl);
+    text-align: center;
+}
+
+.routes-kicker {
+    display: inline-block;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-secondary);
+    font-size: var(--font-size-small);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px rgba(6, 182, 212, 0.7);
+}
+
+.routes-header h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: var(--color-text-primary);
+    text-shadow: 0 0 25px rgba(59, 130, 246, 0.7);
+}
+
+.routes-header p {
+    color: var(--color-text-secondary);
+}
+
+.routes-map {
+    position: relative;
+    width: min(100%, 1100px);
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid rgba(6, 182, 212, 0.35);
+    border-radius: var(--border-radius-lg);
+    background:
+        radial-gradient(circle at 18% 32%, rgba(59, 130, 246, 0.35) 0 9%, transparent 10%),
+        radial-gradient(circle at 52% 38%, rgba(6, 182, 212, 0.32) 0 11%, transparent 12%),
+        radial-gradient(circle at 77% 33%, rgba(59, 130, 246, 0.28) 0 8%, transparent 9%),
+        radial-gradient(circle at 33% 66%, rgba(6, 182, 212, 0.32) 0 12%, transparent 13%),
+        radial-gradient(circle at 58% 73%, rgba(59, 130, 246, 0.22) 0 10%, transparent 11%),
+        linear-gradient(180deg, rgba(15, 23, 42, 0.8), rgba(5, 8, 22, 0.94)),
+        linear-gradient(90deg, rgba(6, 182, 212, 0.14) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(6, 182, 212, 0.14) 1px, transparent 1px);
+    background-size: auto, auto, auto, auto, auto, auto, 72px 72px, 72px 72px;
+    box-shadow: inset 0 0 80px rgba(6, 182, 212, 0.14), var(--shadow-lg);
+}
+
+.routes-map::before,
+.routes-map::after {
+    content: "";
+    position: absolute;
+    inset: 9% 7%;
+    border: 1px solid rgba(226, 232, 240, 0.09);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.routes-map::after {
+    inset: 18% 16%;
+    opacity: 0.7;
+}
+
+.map-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(226, 232, 240, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(226, 232, 240, 0.08) 1px, transparent 1px);
+    background-size: 9% 14%;
+    mask-image: radial-gradient(circle, black 30%, transparent 76%);
+}
+
+.world-map {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.68;
+    filter: drop-shadow(0 0 16px rgba(6, 182, 212, 0.35));
+}
+
+.world-map path {
+    fill: rgba(30, 41, 59, 0.72);
+    stroke: rgba(6, 182, 212, 0.62);
+    stroke-width: 2;
+}
+
+.map-label {
+    position: absolute;
+    color: rgba(226, 232, 240, 0.42);
+    font-size: clamp(0.55rem, 1vw, 0.85rem);
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+.north-america {
+    top: 26%;
+    left: 13%;
+}
+
+.south-america {
+    top: 73%;
+    left: 30%;
+}
+
+.europe {
+    top: 28%;
+    left: 53%;
+}
+
+.africa {
+    top: 65%;
+    left: 59%;
+}
+
+.route-line {
+    position: absolute;
+    left: 42%;
+    top: 52%;
+    width: 33%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(6, 182, 212, 0.05), rgba(6, 182, 212, 0.9), rgba(6, 182, 212, 0.05));
+    box-shadow: var(--glow-secondary);
+    transform-origin: left center;
+    pointer-events: none;
+}
+
+.route-line-1 {
+    transform: rotate(-28deg);
+}
+
+.route-line-2 {
+    width: 25%;
+    transform: rotate(11deg);
+}
+
+.route-line-3 {
+    width: 22%;
+    transform: rotate(45deg);
+}
+
+.route-line-4 {
+    width: 28%;
+    transform: rotate(-8deg);
+}
+
+.route-marker {
+    position: absolute;
+    z-index: 5;
+    width: 1.15rem;
+    height: 1.15rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+.route-marker::before {
+    content: "";
+    position: absolute;
+    inset: -0.65rem;
+    border: 1px solid rgba(6, 182, 212, 0.55);
+    border-radius: 50%;
+    animation: marker-pulse 1.8s infinite;
+}
+
+.marker-dot {
+    position: absolute;
+    inset: 0;
+    display: block;
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    box-shadow: 0 0 18px rgba(6, 182, 212, 0.95);
+}
+
+.marker-tooltip {
+    position: absolute;
+    bottom: calc(100% + 0.9rem);
+    left: 50%;
+    min-width: 155px;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-small);
+    line-height: 1.45;
+    text-align: left;
+    background-color: rgba(15, 23, 42, 0.96);
+    border: 1px solid rgba(6, 182, 212, 0.55);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md), var(--glow-secondary);
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 8px);
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.marker-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 7px solid transparent;
+    border-top-color: rgba(15, 23, 42, 0.96);
+    transform: translateX(-50%);
+}
+
+.marker-tooltip strong {
+    display: block;
+    color: var(--color-secondary);
+}
+
+.route-marker:hover,
+.route-marker:focus-visible {
+    z-index: 10;
+    outline: none;
+}
+
+.route-marker:hover .marker-tooltip,
+.route-marker:focus-visible .marker-tooltip {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.bogota {
+    top: 57%;
+    left: 42%;
+}
+
+.medellin {
+    top: 50%;
+    left: 38%;
+}
+
+.cali {
+    top: 63%;
+    left: 36%;
+}
+
+.barranquilla {
+    top: 41%;
+    left: 43%;
+}
+
+.cartagena {
+    top: 43%;
+    left: 40%;
+}
+
+.santa-marta {
+    top: 39%;
+    left: 45%;
+}
+
+.manizales {
+    top: 54%;
+    left: 39.5%;
+}
+
+.armenia {
+    top: 58%;
+    left: 38.5%;
+}
+
+@keyframes marker-pulse {
+    0% {
+        opacity: 0.8;
+        transform: scale(0.72);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.65);
+    }
+}
