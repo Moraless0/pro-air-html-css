@@ -61,8 +61,8 @@
     }
 
     .routes-map {
-        width: min(100%, 520px);
-        min-height: 540px;
+        width: min(100%, 330px);
+        min-height: unset;
     }
 
     .route-marker {
