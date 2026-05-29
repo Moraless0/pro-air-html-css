@@ -604,8 +604,8 @@
 
 .route-line {
     position: absolute;
-    left: 46%;
-    top: 37%;
+    left: 51.1%;
+    top: 47.4%;
     width: 24%;
     height: 2px;
     background: linear-gradient(90deg, rgba(6, 182, 212, 0.05), rgba(6, 182, 212, 0.9), rgba(6, 182, 212, 0.05));
@@ -713,43 +713,43 @@
 }
 
 .bogota {
-    top: 45%;
-    left: 48%;
+    top: 47.4%;
+    left: 51.1%;
 }
 
 .medellin {
-    top: 34%;
-    left: 43%;
+    top: 40%;
+    left: 43.8%;
 }
 
 .cali {
-    top: 51%;
-    left: 39%;
+    top: 53.5%;
+    left: 39.2%;
 }
 
 .barranquilla {
-    top: 15%;
-    left: 47%;
+    top: 17.1%;
+    left: 47.6%;
 }
 
 .cartagena {
-    top: 18%;
-    left: 42%;
+    top: 19.9%;
+    left: 44.3%;
 }
 
 .santa-marta {
-    top: 14%;
-    left: 51%;
+    top: 15.7%;
+    left: 50.5%;
 }
 
 .manizales {
-    top: 41%;
-    left: 42%;
+    top: 45.7%;
+    left: 44.1%;
 }
 
 .armenia {
-    top: 46%;
-    left: 41%;
+    top: 48.3%;
+    left: 43.3%;
 }
 
 @keyframes marker-pulse {
