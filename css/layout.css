@@ -522,22 +522,20 @@
 
 .routes-map {
     position: relative;
-    width: min(100%, 1100px);
-    aspect-ratio: 16 / 9;
+    width: min(100%, 700px);
+    aspect-ratio: 612 / 694;
     margin: 0 auto;
     overflow: hidden;
     border: 1px solid rgba(6, 182, 212, 0.35);
     border-radius: var(--border-radius-lg);
     background:
-        radial-gradient(circle at 18% 32%, rgba(59, 130, 246, 0.35) 0 9%, transparent 10%),
-        radial-gradient(circle at 52% 38%, rgba(6, 182, 212, 0.32) 0 11%, transparent 12%),
-        radial-gradient(circle at 77% 33%, rgba(59, 130, 246, 0.28) 0 8%, transparent 9%),
-        radial-gradient(circle at 33% 66%, rgba(6, 182, 212, 0.32) 0 12%, transparent 13%),
-        radial-gradient(circle at 58% 73%, rgba(59, 130, 246, 0.22) 0 10%, transparent 11%),
+        radial-gradient(circle at 24% 19%, rgba(6, 182, 212, 0.22) 0 12%, transparent 13%),
+        radial-gradient(circle at 72% 45%, rgba(59, 130, 246, 0.24) 0 17%, transparent 18%),
+        radial-gradient(circle at 41% 75%, rgba(6, 182, 212, 0.18) 0 18%, transparent 19%),
         linear-gradient(180deg, rgba(15, 23, 42, 0.8), rgba(5, 8, 22, 0.94)),
         linear-gradient(90deg, rgba(6, 182, 212, 0.14) 1px, transparent 1px),
         linear-gradient(0deg, rgba(6, 182, 212, 0.14) 1px, transparent 1px);
-    background-size: auto, auto, auto, auto, auto, auto, 72px 72px, 72px 72px;
+    background-size: auto, auto, auto, auto, 72px 72px, 72px 72px;
     box-shadow: inset 0 0 80px rgba(6, 182, 212, 0.14), var(--shadow-lg);
 }
 
@@ -566,19 +564,14 @@
     mask-image: radial-gradient(circle, black 30%, transparent 76%);
 }
 
-.world-map {
+.colombia-map {
     position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.68;
-    filter: drop-shadow(0 0 16px rgba(6, 182, 212, 0.35));
-}
-
-.world-map path {
-    fill: rgba(30, 41, 59, 0.72);
-    stroke: rgba(6, 182, 212, 0.62);
-    stroke-width: 2;
+    inset: 6% 14%;
+    width: 72%;
+    height: 88%;
+    object-fit: contain;
+    opacity: 0.74;
+    filter: drop-shadow(0 0 18px rgba(6, 182, 212, 0.48));
 }
 
 .map-label {
@@ -589,31 +582,31 @@
     text-transform: uppercase;
 }
 
-.north-america {
-    top: 26%;
-    left: 13%;
+.caribbean {
+    top: 11%;
+    left: 44%;
 }
 
-.south-america {
-    top: 73%;
-    left: 30%;
+.pacific {
+    top: 49%;
+    left: 14%;
 }
 
-.europe {
-    top: 28%;
-    left: 53%;
+.andes {
+    top: 39%;
+    left: 49%;
 }
 
-.africa {
-    top: 65%;
-    left: 59%;
+.amazon {
+    top: 74%;
+    left: 57%;
 }
 
 .route-line {
     position: absolute;
-    left: 42%;
-    top: 52%;
-    width: 33%;
+    left: 46%;
+    top: 37%;
+    width: 24%;
     height: 2px;
     background: linear-gradient(90deg, rgba(6, 182, 212, 0.05), rgba(6, 182, 212, 0.9), rgba(6, 182, 212, 0.05));
     box-shadow: var(--glow-secondary);
@@ -622,22 +615,22 @@
 }
 
 .route-line-1 {
-    transform: rotate(-28deg);
+    transform: rotate(67deg);
 }
 
 .route-line-2 {
-    width: 25%;
-    transform: rotate(11deg);
+    width: 20%;
+    transform: rotate(106deg);
 }
 
 .route-line-3 {
     width: 22%;
-    transform: rotate(45deg);
+    transform: rotate(132deg);
 }
 
 .route-line-4 {
-    width: 28%;
-    transform: rotate(-8deg);
+    width: 18%;
+    transform: rotate(88deg);
 }
 
 .route-marker {
@@ -720,43 +713,43 @@
 }
 
 .bogota {
-    top: 57%;
-    left: 42%;
+    top: 45%;
+    left: 48%;
 }
 
 .medellin {
-    top: 50%;
-    left: 38%;
-}
-
-.cali {
-    top: 63%;
-    left: 36%;
-}
-
-.barranquilla {
-    top: 41%;
+    top: 34%;
     left: 43%;
 }
 
+.cali {
+    top: 51%;
+    left: 39%;
+}
+
+.barranquilla {
+    top: 15%;
+    left: 47%;
+}
+
 .cartagena {
-    top: 43%;
-    left: 40%;
+    top: 18%;
+    left: 42%;
 }
 
 .santa-marta {
-    top: 39%;
-    left: 45%;
+    top: 14%;
+    left: 51%;
 }
 
 .manizales {
-    top: 54%;
-    left: 39.5%;
+    top: 41%;
+    left: 42%;
 }
 
 .armenia {
-    top: 58%;
-    left: 38.5%;
+    top: 46%;
+    left: 41%;
 }
 
 @keyframes marker-pulse {

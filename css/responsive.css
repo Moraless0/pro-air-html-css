@@ -61,8 +61,8 @@
     }
 
     .routes-map {
-        aspect-ratio: 4 / 5;
-        min-height: 520px;
+        width: min(100%, 520px);
+        min-height: 540px;
     }
 
     .route-marker {
@@ -76,9 +76,9 @@
     }
 
     .route-line {
-        left: 40%;
-        top: 54%;
-        width: 38%;
+        left: 46%;
+        top: 37%;
+        width: 24%;
     }
 
     .flights-content {
@@ -142,7 +142,7 @@
 
     /* Rutas */
     .routes-map {
-        aspect-ratio: 4 / 3;
+        width: min(100%, 680px);
     }
 }
 
